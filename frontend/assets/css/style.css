@@ -8946,11 +8946,11 @@ textarea.form-control {
   font-size: 24px; }
 
 .ftco-section {
-  padding: 7em 0;
+  padding: 3em 0;
   position: relative; }
   @media (max-width: 767.98px) {
     .ftco-section {
-      padding: 6em 0; } }
+      padding: 0em 0; } }
 
 .ftco-bg-dark {
   background: #33313b !important; }
@@ -9766,4 +9766,57 @@ textarea.form-control {
 
 
     
+    .carousel-item {
+      height: 100vh;
+    }
+    
+    .carousel-item img {
+      object-fit: cover;
+      height: 100%;
+      width: 100%;
+    }
+    
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+      background-image: url('data:image/svg+xml;charset=utf-8,%3Csvg xmlns="http://www.w3.org/2000/svg" fill="%23333" viewBox="0 0 8 8"%3E%3Cpath d="M5.25 0l-.719.719 2.781 2.813h-7.312v1.75h7.312l-2.781 2.813.719.719 3.969-4-3.969-4z"/%3E%3C/svg%3E');
+      height: 30px;
+      width: 30px;
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      border-radius: 50%;
+      background-color: rgba(255, 255, 255, 0.8);
+    }
+    
+    .carousel-control-prev,
+    .carousel-control-next {
+      width: 5%;
+    }
+    
+    .carousel-control-prev {
+      margin-left: -2.5%;
+    }
+    
+    .carousel-control-next {
+      margin-right: -2.5%;
+    }
+    
+    .carousel-indicators {
+      bottom: 20px;
+    }
+    
+    .carousel-indicators li {
+      background-color: rgba(255, 255, 255, 0.8);
+      border-radius: 50%;
+      width: 12px;
+      height: 12px;
+      margin: 0 4px;
+    }
+    
+    .carousel-indicators .active {
+      width: 12px;
+      height: 12px;
+      margin: 0 4px;
+      background-color: #333;
+    }
+
     
