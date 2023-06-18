@@ -7,5 +7,7 @@ urlpatterns = [
     path("about", AboutPageView.as_view(), name="about"),
     path("contact", ContactPageView.as_view(), name="contact"),
     path("services", ServicePageView.as_view(), name="services"),
+    path("training", TrainingPageView.as_view(), name="training"),
+    path("service/<int:service_id>/", ServiceDetailPageView.as_view(), name="service"),
     # path("contact_form", ContactAPiView.as_view(), name="contact_form"),
 ]
