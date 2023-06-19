@@ -87,13 +87,11 @@ class ServiceDetailPageView(View):
     context = {}
 
     def get(self, request, service_slug):
-        print(service_slug, 'serve')
         # service = None
         for s in services:
             if s["slug"] == service_slug:
                 self.context.update(s)
                 break
-        print(self.context)
 
         return render(request, self.template_name, self.context)
 

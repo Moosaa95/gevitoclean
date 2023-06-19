@@ -8711,7 +8711,8 @@ h1, h2, h3, h4, h5,
     box-shadow: 0px 12px 31px -16px rgba(0, 0, 0, 0.15); }
     @media (min-width: 992px) {
       .ftco-appointment .wrap-appointment {
-        margin-top: -50px; } }
+        margin-top: -50px; 
+       } }
 
 .appointment .form-group {
   position: relative;
@@ -8947,10 +8948,19 @@ textarea.form-control {
 
 .ftco-section {
   padding: 3em 0;
-  position: relative; }
+  position: relative; 
+  /* border: 4px solid green; */
+}
   @media (max-width: 767.98px) {
     .ftco-section {
-      padding: 0em 0; } }
+      padding: 0em 0; 
+      /* border: 4px solid red; */
+    } 
+    .appoint {
+      /* border: 3px solid blue; */
+      margin: -8em 0 0 0 !important;
+    }
+  }
 
 .ftco-bg-dark {
   background: #33313b !important; }
