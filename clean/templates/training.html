@@ -24,42 +24,6 @@
   </div>
 </section>
 
-<section class="ftco-section ftco-no-pt ftco-no-pb">
-  <div class="container">
-    <div class="row d-flex no-gutters">
-      <div class="col-md-6 d-flex">
-        <div
-          class="img d-flex align-items-center justify-content-center py-5 py-md-0"
-          style="background-image: url(/static/assets/images/training1.jpeg)"
-        ></div>
-      </div>
-
-      <div class="col-md-6 pl-md-5 pt-md-5">
-        <div class="row justify-content-start py-5">
-          <div class="col-md-12 heading-section ftco-animate">
-            <!-- <span class="subheading"
-              >Welcome to Gevito Professional Cleaners:</span
-            >
-            <h2 class="mb-4">
-              Your trusted partner for professional cleaning services in Lagos
-              and Nigeria.
-            </h2> -->
-            <p>
-              At Gevito Cleaning Services, we take pride in offering a unique
-              and unparalleled service - the affiliation of an employee
-              dedicated solely to your organization. This means you can have a
-              highly skilled and trained cleaner or domestic/office staff
-              exclusively assigned to your premises, providing you with
-              consistent and personalized cleaning services tailored to your
-              specific requirements.
-            </p>
-            <p></p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
 <section class="ftco-section">
   <div class="container">
     <div class="row justify-content-center pb-5 mb-3">
@@ -72,108 +36,23 @@
       </div>
     </div>
     <div class="row">
+      {% for training in trainings %}
       <div class="col-md-6 col-lg-4 services ftco-animate">
-        <div class="d-block d-flex">
-          <div class="icon d-flex justify-content-center align-items-center">
-            <span class="flaticon-workplace"></span>
+        <div class="d-block d-flex flex-column align-items-center">
+          <div class="d-flex justify-content-center align-items-center mb-2" style="width: 100%; height: 100%;">
+            <img src="{{ training.images.0 }}"  style="width: 90%; height: 300px;" alt="">
           </div>
           <div class="media-body pl-3">
-            <h3 class="heading text-success">Dedicated Expertise</h3>
+           <a href="/training/{{ training.slug }}"> <h3 class="heading text-success">{{ training.title }}</h3></a>
             <p>
-              Your affiliated employee will become intimately familiar with your
-              premises, allowing them to develop a deep understanding of your
-              cleaning needs and preferences. They will consistently deliver
-              top-quality services with meticulous attention to detail.
+              {{ training.description|truncatewords:20 }}
             </p>
+            <p><a href="/training/{{ training.slug }}" class="btn-custom">Read more</a></p>
           </div>
         </div>
       </div>
-      <div class="col-md-6 col-lg-4 services ftco-animate">
-        <div class="d-block d-flex">
-          <div class="icon d-flex justify-content-center align-items-center">
-            <span class="flaticon-pool"></span>
-          </div>
-          <div class="media-body pl-3">
-            <h3 class="heading text-success">Personalized Approach</h3>
-            <p>
-              We recognize that every organization has unique cleaning
-              requirements. With our affiliation program, your dedicated
-              employee will work closely with you to create a customized
-              cleaning plan that addresses your specific needs, ensuring maximum
-              satisfaction.
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-6 col-lg-4 services ftco-animate">
-        <div class="d-block d-flex">
-          <div class="icon d-flex justify-content-center align-items-center">
-            <span class="flaticon-rug"></span>
-          </div>
-          <div class="media-body pl-3">
-            <h3 class="heading text-success">
-              Trusted and Reliable Professionals
-            </h3>
-            <p>
-              Rest assured that the affiliated employee assigned to your
-              organization undergoes a rigorous selection process, including
-              thorough background checks and comprehensive training. They are
-              committed to maintaining the highest standards of professionalism,
-              integrity, and confidentiality.
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-6 col-lg-4 services ftco-animate">
-        <div class="d-block d-flex">
-          <div class="icon d-flex justify-content-center align-items-center">
-            <span class="flaticon-kitchen"></span>
-          </div>
-          <div class="media-body pl-3">
-            <h3 class="heading text-success">Enhanced Communication</h3>
-            <p>
-              Clear and open lines of communication are essential for a
-              successful affiliation. We foster strong communication channels
-              between you, your dedicated employee, and our support team to
-              ensure that any questions, concerns, or adjustments are promptly
-              addressed.
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-6 col-lg-4 services ftco-animate">
-        <div class="d-block d-flex">
-          <div class="icon d-flex justify-content-center align-items-center">
-            <span class="flaticon-garden"></span>
-          </div>
-          <div class="media-body pl-3">
-            <h3 class="heading text-success">Consistency and Continuity</h3>
-            <p>
-              With an affiliated employee, you can enjoy consistent and
-              uninterrupted cleaning services. They will be well-versed in your
-              specific cleaning routines, allowing for seamless transitions and
-              avoiding disruptions during employee absences or turnover.
-            </p>
-          </div>
-        </div>
-      </div>
-      <!-- <div class="col-md-6 col-lg-4 services ftco-animate">
-          <div class="d-block d-flex">
-            <div
-              class="icon d-flex justify-content-center align-items-center"
-            >
-              <span class="flaticon-balcony"></span>
-            </div>
-            <div class="media-body pl-3">
-              <a href="{% url 'services' %}"> <h3 class="heading text-success">Affiliate an Employee</h3></a>
-              <p>
-                We offer the unique service of affiliating an employee to your organization. This means that you can have a dedicated cleaner assigned exclusively to your premises, ensuring consistent and personalized cleaning services tailored to your specific requirements.
-              </p>
-            </div>
-          </div>
-        </div> -->
+      {% endfor %}
+      
     </div>
   </div>
 </section>
