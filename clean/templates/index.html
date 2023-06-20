@@ -1,87 +1,122 @@
+{% extends 'base/base.html' %} {% block content %}
 
-{% extends 'base/base.html' %}
-
-{% block content %}
-
-<section class="ftco-section" style="height: 100vh; margin-bottom: 9em;">
-  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="1500">
-    <ol class="carousel-indicators">
-      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-      <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
-      <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
-    </ol>
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img class="d-block w-100" src="/static/assets/images/slider1.jpeg" alt="First slide">
-        <a href="https://tinyurl.com/mvhysnku" class="d-flex align-items-center justify-content-center" style="position: absolute; bottom: 20px; right: 20px;">
-          <span class="fa fa-whatsapp" style="font-size: 5em; border-radius: 50%; background-color: #fff; padding: 0.4em; color: #25D366;"><i class="sr-only">WhatsApp</i></span>
-        </a>
-      </div>
-      <div class="carousel-item">
-        <img class="d-block w-100" src="/static/assets/images/slider2.jpeg" alt="Second slide">
-        <a href="https://tinyurl.com/mvhysnku" class="d-flex align-items-center justify-content-center" style="position: absolute; bottom: 20px; right: 20px;">
-          <span class="fa fa-whatsapp" style="font-size: 5em; border-radius: 50%; background-color: #fff; padding: 0.4em; color: #25D366;"><i class="sr-only">WhatsApp</i></span>
-        </a>
-      </div>
-      <div class="carousel-item">
-        <img class="d-block w-100" src="/static/assets/images/slider3.jpeg" alt="Third slide">
-        <a href="https://tinyurl.com/mvhysnku" class="d-flex align-items-center justify-content-center" style="position: absolute; bottom: 20px; right: 20px;">
-          <span class="fa fa-whatsapp" style="font-size: 5em; border-radius: 50%; background-color: #fff; padding: 0.4em; color: #25D366;"><i class="sr-only">WhatsApp</i></span>
-        </a>
-      </div>
-      <div class="carousel-item">
-        <img class="d-block w-100" src="/static/assets/images/slider4.jpeg" alt="Third slide">
-        <a href="https://tinyurl.com/mvhysnku" class="d-flex align-items-center justify-content-center" style="position: absolute; bottom: 20px; right: 20px;">
-          <span class="fa fa-whatsapp" style="font-size: 5em; border-radius: 50%; background-color: #fff; padding: 0.4em; color: #25D366;"><i class="sr-only">WhatsApp</i></span>
-        </a>
-      </div>
-      <div class="carousel-item">
-        <img class="d-block w-100" src="/static/assets/images/slider5.jpeg" alt="Third slide">
-        <a href="https://tinyurl.com/mvhysnku" class="d-flex align-items-center justify-content-center" style="position: absolute; bottom: 20px; right: 20px;">
-          <span class="fa fa-whatsapp" style="font-size: 5em; border-radius: 50%; background-color: #fff; padding: 0.4em; color: #25D366;"><i class="sr-only">WhatsApp</i></span>
-        </a>
+<section id="hero" class="hero">
+  <div class="info d-flex align-items-center">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-6 text-center">
+          <h2 data-aos="fade-down">
+            Welcome to <span>Gevitoclean!</span>
+          </h2>
+          <p data-aos="fade-up">
+            We are a dedicated and professional cleaning company committed to
+            providing top-quality services for residential and commercial
+            spaces. Our mission is to create clean and healthy environments that
+            enhance your well-being and productivity.
+          </p>
+        </div>
       </div>
     </div>
   </div>
+
+  <div
+    id="hero-carousel"
+    class="carousel slide"
+    data-bs-ride="carousel"
+    data-bs-interval="3000"
+  >
+    <div
+      class="carousel-item active"
+      style="background-image: url(/static/assets/images/slider10.jpg)"
+    ></div>
+    <div
+      class="carousel-item"
+      style="background-image: url(/static/assets/images/slider9.jpg)"
+    ></div>
+    <div
+      class="carousel-item"
+      style="background-image: url(/static/assets/images/slider8.jpg)"
+    ></div>
+    <div
+      class="carousel-item"
+      style="background-image: url(/static/assets/images/slider7.jpg)"
+    ></div>
+    <div
+      class="carousel-item"
+      style="background-image: url(/static/assets/images/slider6.jpg)"
+    ></div>
+    <div
+      class="carousel-item"
+      style="background-image: url(/static/assets/images/slider4.jpeg)"
+    ></div>
+    <div
+      class="carousel-item"
+      style="background-image: url(/static/assets/images/slider1.jpeg)"
+    ></div>
+    <div
+      class="carousel-item"
+      style="background-image: url(/static/assets/images/slider2.jpeg)"
+    ></div>
+    <div
+      class="carousel-item"
+      style="background-image: url(/static/assets/images/slider3.jpeg)"
+    ></div>
+
+    <a
+      class="carousel-control-prev"
+      href="#hero-carousel"
+      role="button"
+      data-bs-slide="prev"
+    >
+      <span
+        class="carousel-control-prev-icon bi bi-chevron-left"
+        aria-hidden="true"
+      ></span>
+    </a>
+
+    <a
+      class="carousel-control-next"
+      href="#hero-carousel"
+      role="button"
+      data-bs-slide="next"
+    >
+      <span
+        class="carousel-control-next-icon bi bi-chevron-right"
+        aria-hidden="true"
+      ></span>
+    </a>
+  </div>
 </section>
 
-
-
-<section class="ftco-appointment ftco-section appoint ftco-no-pt ftco-no-pb">
-<div class="overlay"></div>
-<div class="container">
-  <div class="row d-md-flex justify-content-center">
-    <div class="col-md-12">
-      <div
-        class="wrap-appointment bg-white d-md-flex pl-md-4 pb-5 pb-md-0"
-      >
-        <form action="#" class="appointment w-100">
-          <div class="row justify-content-center">
-            <div
-              class="col-12 col-md d-flex align-items-center pt-4 pt-md-0"
-            >
-              <div class="form-group py-md-4 py-2 px-4 px-md-0">
-                <label for="name">Name</label>
-                <input
-                  type="text"
-                  class="form-control"
-                  placeholder="Your Name"
-                />
+<section class="ftco-appointment ftco-section appoint ftco-no-pt ftco-no-pb" style="margin-top: 3.5em;">
+  <div class="overlay"></div>
+  <div class="container">
+    <div class="row d-md-flex justify-content-center">
+      <div class="col-md-12">
+        <div class="wrap-appointment bg-white d-md-flex pl-md-4 pb-5 pb-md-0">
+          <form action="#" class="appointment w-100">
+            <div class="row justify-content-center">
+              <div class="col-12 col-md d-flex align-items-center pt-4 pt-md-0">
+                <div class="form-group py-md-4 py-2 px-4 px-md-0">
+                  <label for="name">Name</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Your Name"
+                  />
+                </div>
               </div>
-            </div>
-            <div class="col-12 col-md d-flex align-items-center">
-              <div class="form-group py-md-4 py-2 px-4 px-md-0">
-                <label for="name">Phone number</label>
-                <input
-                  type="text"
-                  class="form-control"
-                  placeholder="Phone number"
-                />
+              <div class="col-12 col-md d-flex align-items-center">
+                <div class="form-group py-md-4 py-2 px-4 px-md-0">
+                  <label for="name">Phone number</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Phone number"
+                  />
+                </div>
               </div>
-            </div>
-            <div class="col-12 col-md d-flex align-items-center">
+              <div class="col-12 col-md d-flex align-items-center">
                 <div class="form-group py-md-4 py-2 px-4 px-md-0">
                   <label for="name">Email</label>
                   <input
@@ -91,15 +126,15 @@
                   />
                 </div>
               </div>
-            <div class="col-12 col-md d-flex align-items-center">
-              <div class="form-group py-md-4 py-2 px-4 px-md-0">
-                <label for="name">Select Services</label>
-                <div class="form-field">
-                  <div class="select-wrap">
-                    <div class="icon">
-                      <span class="fa fa-chevron-down"></span>
-                    </div>
-                    <select name="" id="" class="form-control">
+              <div class="col-12 col-md d-flex align-items-center">
+                <div class="form-group py-md-4 py-2 px-4 px-md-0">
+                  <label for="name">Select Services</label>
+                  <div class="form-field">
+                    <div class="select-wrap">
+                      <div class="icon">
+                        <span class="fa fa-chevron-down"></span>
+                      </div>
+                      <select name="" id="" class="form-control">
                         <option value="">Select Services</option>
                         <option value="">Office Cleaning</option>
                         <option value="">Home and Facility Cleaning</option>
@@ -108,92 +143,94 @@
                         <option value="">Laundry and Ironing</option>
                         <option value="">Affiliate an Employee</option>
                       </select>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <div
-                    class="col-12 col-md d-flex align-items-center pb-4 pb-md-0"
-                  >
-                    <div class="form-group py-md-4 py-2 px-4 px-md-0">
-                      <label for="name">How many cleaning do you need</label>
-                      <div class="form-field">
-                        <div class="select-wrap">
-                          <div class="icon">
-                            <span class="fa fa-chevron-down"></span>
-                          </div>
-                          <select name="" id="" class="form-control">
-                            <option value="">Select Type</option>
-                            <option value="">Daily</option>
-                            <option value="">Weekly</option>
-                            <option value="">Bi-Weekly</option>
-                            <option value="">Once</option>
-                          </select>
-                        </div>
+              <div class="col-12 col-md d-flex align-items-center pb-4 pb-md-0">
+                <div class="form-group py-md-4 py-2 px-4 px-md-0">
+                  <label for="name">How many cleaning do you need</label>
+                  <div class="form-field">
+                    <div class="select-wrap">
+                      <div class="icon">
+                        <span class="fa fa-chevron-down"></span>
                       </div>
+                      <select name="" id="" class="form-control">
+                        <option value="">Select Type</option>
+                        <option value="">Daily</option>
+                        <option value="">Weekly</option>
+                        <option value="">Bi-Weekly</option>
+                        <option value="">Once</option>
+                      </select>
                     </div>
                   </div>
-            <div
-              class="col-12 col-md d-flex align-items-center align-items-stretch"
-            >
+                </div>
+              </div>
               <div
-                class="form-group py-md-4 py-2 px-4 px-md-0 d-flex align-items-stretch bg-primary"
+                class="col-12 col-md d-flex align-items-center align-items-stretch"
               >
-                <input
-                  type="submit"
-                  value="Quote Now"
-                  class="btn btn-primary py-3 px-4"
-                />
+                <div
+                  class="form-group py-md-4 py-2 px-4 px-md-0 d-flex align-items-stretch bg-primary"
+                >
+                  <input
+                    type="submit"
+                    value="Quote Now"
+                    class="btn btn-primary py-3 px-4"
+                  />
+                </div>
               </div>
             </div>
-          </div>
-        </form>
+          </form>
+        </div>
       </div>
     </div>
   </div>
-</div>
 </section>
 
 <section class="ftco-section ftco-no-pt ftco-no-pb">
-<div class="container">
-  <div class="row d-flex no-gutters">
-    <div class="col-md-6 d-flex">
-      <div
-        class="img d-flex align-items-center justify-content-center py-5 py-md-0"
-        style="background-image: url(/static/assets/images/gevitoclean.jpeg)"
-      >
-        <div class="time-open-wrap">
-          <div class="desc p-4">
-            <h2>Business Hours</h2>
-            <div class="opening-hours">
-              <h4>Opening Days:</h4>
-              <p class="pl-3">
-                <span
-                  ><strong>Monday – Friday:</strong> 8am to 5pm</span
-                >
-                <span><strong>Saturday :</strong> 9am to 5pm</span>
-              </p>
-              <h4>Vacations:</h4>
-              <p class="pl-3">
-                <span>All Sunday Days</span>
-                <span>All Official Holidays</span>
-              </p>
+  <div class="container">
+    <div class="row d-flex no-gutters">
+      <div class="col-md-6 d-flex">
+        <div
+          class="img d-flex align-items-center justify-content-center py-5 py-md-0"
+          style="background-image: url(/static/assets/images/gevitoclean.jpeg)"
+        >
+          <div class="time-open-wrap">
+            <div class="desc p-4">
+              <h2>Business Hours</h2>
+              <div class="opening-hours">
+                <h4>Opening Days:</h4>
+                <p class="pl-3">
+                  <span><strong>Monday – Friday:</strong> 8am to 5pm</span>
+                  <span><strong>Saturday :</strong> 9am to 5pm</span>
+                </p>
+                <h4>Vacations:</h4>
+                <p class="pl-3">
+                  <span>All Sunday Days</span>
+                  <span>All Official Holidays</span>
+                </p>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-    <div class="col-md-6 pl-md-5 pt-md-5">
-      <div class="row justify-content-start py-5">
-        <div class="col-md-12 heading-section ftco-animate">
-          <span class="subheading">Welcome to Gevito Clean Limited</span>
-          <h2 class="mb-4 text-success">Experience the Power of Freshness with Gevito Clean</h2>
-          <p>
-            Discover a world where cleanliness knows no boundaries. Contact Gevito Clean today to schedule your revitalizing cleaning service. Let us unleash the power of freshness and make your space shine brighter than ever before. Get ready to experience the Gevito Clean revolution.
-          </p>
+      <div class="col-md-6 pl-md-5 pt-md-5">
+        <div class="row justify-content-start py-5">
+          <div class="col-md-12 heading-section ftco-animate">
+            <span class="subheading">Welcome to Gevito Clean Limited</span>
+            <h2 class="mb-4 text-success">
+              Experience the Power of Freshness with Gevito Clean
+            </h2>
+            <p>
+              Discover a world where cleanliness knows no boundaries. Contact
+              Gevito Clean today to schedule your revitalizing cleaning service.
+              Let us unleash the power of freshness and make your space shine
+              brighter than ever before. Get ready to experience the Gevito
+              Clean revolution.
+            </p>
+          </div>
         </div>
-      </div>
-      <!-- <div class="row ftco-counter py-5" id="section-counter">
+        <!-- <div class="row ftco-counter py-5" id="section-counter">
         <div
           class="col-md-6 col-lg-4 d-flex justify-content-center counter-wrap ftco-animate"
         >
@@ -231,9 +268,42 @@
           </div>
         </div>
       </div> -->
+      </div>
     </div>
   </div>
-</div>
+</section>
+
+<section class="ftco-section">
+  <div class="container">
+    <div class="row justify-content-center pb-2 mb-1">
+      <div class="col-md-7 heading-section text-center ftco-animate">
+        <h2 class="text-success">About us</h2>
+        <!-- <span class="subheading">About Us</span> -->
+
+      </div>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-md-7 col-lg-5 text-center">
+        <img
+          class="img-fluid"
+          src="/static/assets/images/laundry.jpeg"
+          alt="Image"
+          style="max-height: 300px; width: 100%;"
+        />
+      </div>
+      <div class="col-md-7 col-lg-7 text-center">
+        <p>
+          With over 10 years of experience, we deliver exceptional cleaning
+          solutions to Residential and Commercial clients. We are know for
+          our Professionalism, Quality Services, Reliability and Eco
+          Friendly Cleaning.
+        </p>
+          <p>
+            <a href="{% url 'about' %}" class="btn btn-primary">Read More</a>
+          </p>
+      </div>
+    </div>
+  </div>
 </section>
 
 <!-- <section class="ftco-section">
@@ -353,14 +423,25 @@
       {% for service in services %}
       <div class="col-md-6 col-lg-4 services ftco-animate">
         <div class="d-block d-flex flex-column align-items-center">
-          <div class="d-flex justify-content-center align-items-center mb-2" style="width: 100%; height: 100%;">
+          <div
+            class="d-flex justify-content-center align-items-center mb-2"
+            style="width: 100%; height: 100%"
+          >
             <!-- <span class="flaticon-workplace"></span> -->
-            <img src="{{ service.images.0 }}"  style="width: 90%; height: 300px;" alt="">
+            <img
+              src="{{ service.images.0 }}"
+              style="width: 90%; height: 300px"
+              alt=""
+            />
           </div>
           <div class="media-body pl-3">
             <h3 class="heading text-success">{{ service.title }}</h3>
             <p>{{ service.description|truncatewords:20 }}</p>
-            <p><a href="/service/{{ service.slug }}" class="btn-custom">Read more</a></p>
+            <p>
+              <a href="/service/{{ service.slug }}" class="btn-custom"
+                >Read more</a
+              >
+            </p>
           </div>
         </div>
       </div>
@@ -369,194 +450,364 @@
   </div>
 </section>
 
-
-  <section class="ftco-section">
-    <div class="container">
-      <div class="row justify-content-center pb-5 mb-3">
-        <div class="col-md-7 heading-section text-center ftco-animate">
-          <span class="subheading"
-            >Our employee affiliation program offers a range of benefits that set
-            us apart:</span
-          >
-          <!-- <h2 class="text-success"></h2> -->
-        </div>
-      </div>
-      <div class="row">
-        {% for training in trainings %}
-        <div class="col-md-6 col-lg-4 services ftco-animate">
-          <div class="d-block d-flex flex-column align-items-center">
-            <div class="d-flex justify-content-center align-items-center mb-2" style="width: 100%; height: 100%;">
-              <img src="{{ training.images.0 }}"  style="width: 90%; height: 300px;" alt="">
-            </div>
-            <div class="media-body pl-3">
-             <a href="/training/{{ training.slug }}"> <h3 class="heading text-success">{{ training.title }}</h3></a>
-              <p>
-                {{ training.description|truncatewords:20 }}
-              </p>
-              <p><a href="/training/{{ training.slug }}" class="btn-custom">Read more</a></p>
-            </div>
-          </div>
-        </div>
-        {% endfor %}
-        
-      </div>
-    </div>
-  </section>
-
 <section class="ftco-section">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12 text-center mb-5">
-                <h2 class="text-success">How We Work</h2>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-4">
-                <div class="services-2">
-                    <div class="icon d-flex align-items-center justify-content-center border border-success rounded-circle">
-                        <span class="flaticon-sweeper text-success" style="font-size: 32px; color: #269314;">1</span>
-                    </div>
-                    <div class="text">
-                        <h3 class="text-success">Quote Your Cleaning</h3>
-                        <p>Get a personalized cleaning quote based on your specific needs and requirements. Our team will assess the scope of work and provide you with a competitive and transparent price.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4">
-                <div class="services-2">
-                    <div class="icon d-flex align-items-center justify-content-center border border-success rounded-circle">
-                        <span class="flaticon-calendar text-success" style="font-size: 32px; color: #269314;">2</span>
-                    </div>
-                    <div class="text">
-                        <h3 class="text-success">Schedule Your Cleaning Plan</h3>
-                        <p>Once you receive your cleaning quote and are satisfied with the pricing, our team will work with you to schedule a convenient cleaning plan. We offer flexible scheduling options to accommodate your preferences.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4">
-                <div class="services-2">
-                    <div class="icon d-flex align-items-center justify-content-center border border-success rounded-circle">
-                        <span class="flaticon-rating text-success" style="font-size: 32px; color: #269314;">3</span>
-                    </div>
-                    <div class="text">
-                        <h3 class="text-success">Rate the Service and Review</h3>
-                        <p>Your satisfaction is our priority. After each cleaning session, we encourage you to rate our service and provide feedback. We value your input and continuously strive to improve our services based on your reviews.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
+  <div class="container">
+    <div class="row justify-content-center pb-2 mb-1">
+      <div class="col-md-7 heading-section text-center ftco-animate">
+        <span class="subheading"
+          >Our employee affiliation program offers a range of benefits that set
+          us apart:</span
+        >
+        <!-- <h2 class="text-success"></h2> -->
+      </div>
     </div>
+    <div class="row justify-content-center">
+      <div class="col-md-7 text-center">
+        <img
+          class="img-fluid"
+          src="/static/assets/images/training.jpeg"
+          alt="Image"
+          style="max-height: 300px; width: 50%"
+        />
+      </div>
+    </div>
+    <div class="row justify-content-center pb-1 mb-1">
+      <div class="col-md-7 col-lg-8 heading-section text-center ftco-animate">
+        <p>
+          Some additional information about the benefits can be included here.
+        </p>
+      </div>
+      <div class="col-md-5 text-center">
+        <p>
+          <a href="{% url 'trainings' %}" class="btn btn-primary">Read More</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="ftco-section bg-light">
+  <div class="container">
+    <div class="row justify-content-center pb-5 mb-3">
+      <div class="col-md-8 text-center heading-section ftco-animate">
+        <h2 class="mb-4 text-success">Why Choose Us</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6 col-lg-4 d-flex align-items-stretch ftco-animate">
+        <div class="services-2 text-center">
+          <div class="icon-wrap">
+            <span class="flaticon-star"></span>
+          </div>
+          <h4 class="mb-3 text-success">Exceptional Quality</h4>
+          <p>
+            We strive to deliver exceptional cleaning services with meticulous
+            attention to detail, ensuring your satisfaction.
+          </p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4 d-flex align-items-stretch ftco-animate">
+        <div class="services-2 text-center">
+          <div class="icon-wrap">
+            <span class="flaticon-employee"></span>
+          </div>
+          <h4 class="mb-3 text-success">Experienced Staff</h4>
+          <p>
+            Our dedicated team of experienced cleaning professionals is
+            committed to providing top-quality services tailored to your needs.
+          </p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4 d-flex align-items-stretch ftco-animate">
+        <div class="services-2 text-center">
+          <div class="icon-wrap">
+            <span class="flaticon-customer-service"></span>
+          </div>
+          <h4 class="mb-3 text-success">Customer Satisfaction</h4>
+          <p>
+            We prioritize customer satisfaction and go the extra mile to ensure
+            that your cleaning requirements are met with excellence.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
 
 <section class="ftco-section">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12 text-center mb-5">
-          <h2 class="text-success">Frequently Asked Questions</h2>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center mb-5">
+        <h2 class="text-success">How We Work</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-4">
+        <div class="services-2">
+          <div
+            class="icon d-flex align-items-center justify-content-center border border-success rounded-circle"
+          >
+            <span
+              class="flaticon-sweeper text-success"
+              style="font-size: 32px; color: #269314"
+              >1</span
+            >
+          </div>
+          <div class="text">
+            <h3 class="text-success">Quote Your Cleaning</h3>
+            <p>
+              Get a personalized cleaning quote based on your specific needs and
+              requirements. Our team will assess the scope of work and provide
+              you with a competitive and transparent price.
+            </p>
+          </div>
         </div>
       </div>
-      <div class="row">
-        <div class="col-lg-6">
-          <div class="accordion" id="accordionExample">
-            <div class="card">
-              <div class="card-header" id="headingOne">
-                <h3 class="mb-0">
-                  <button class="btn btn-link text-success" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                    What services does Gevito Clean offer?
-                  </button>
-                </h3>
-              </div>
-              <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
-                <div class="card-body">
-                  Gevito Clean offers a range of cleaning services including office cleaning, home and facility cleaning, deep cleaning, fumigation and disinfection, laundry and ironing, and affiliate an employee services.
-                </div>
+      <div class="col-lg-4">
+        <div class="services-2">
+          <div
+            class="icon d-flex align-items-center justify-content-center border border-success rounded-circle"
+          >
+            <span
+              class="flaticon-calendar text-success"
+              style="font-size: 32px; color: #269314"
+              >2</span
+            >
+          </div>
+          <div class="text">
+            <h3 class="text-success">Schedule Your Cleaning Plan</h3>
+            <p>
+              Once you receive your cleaning quote and are satisfied with the
+              pricing, our team will work with you to schedule a convenient
+              cleaning plan. We offer flexible scheduling options to accommodate
+              your preferences.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="services-2">
+          <div
+            class="icon d-flex align-items-center justify-content-center border border-success rounded-circle"
+          >
+            <span
+              class="flaticon-rating text-success"
+              style="font-size: 32px; color: #269314"
+              >3</span
+            >
+          </div>
+          <div class="text">
+            <h3 class="text-success">Rate the Service and Review</h3>
+            <p>
+              Your satisfaction is our priority. After each cleaning session, we
+              encourage you to rate our service and provide feedback. We value
+              your input and continuously strive to improve our services based
+              on your reviews.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="ftco-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center mb-5">
+        <h2 class="text-success">Frequently Asked Questions</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-6">
+        <div class="accordion" id="accordionExample">
+          <div class="card">
+            <div class="card-header" id="headingOne">
+              <h3 class="mb-0">
+                <button
+                  class="btn btn-link text-success"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#collapseOne"
+                  aria-expanded="true"
+                  aria-controls="collapseOne"
+                >
+                  What services does Gevito Clean offer?
+                </button>
+              </h3>
+            </div>
+            <div
+              id="collapseOne"
+              class="collapse show"
+              aria-labelledby="headingOne"
+              data-parent="#accordionExample"
+            >
+              <div class="card-body">
+                Gevito Clean offers a range of cleaning services including
+                office cleaning, home and facility cleaning, deep cleaning,
+                fumigation and disinfection, laundry and ironing, and affiliate
+                an employee services.
               </div>
             </div>
-            <div class="card">
-              <div class="card-header" id="headingTwo">
-                <h3 class="mb-0">
-                  <button class="btn btn-link text-success collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                    How can I request a cleaning quote?
-                  </button>
-                </h3>
-              </div>
-              <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-                <div class="card-body">
-                  To request a cleaning quote, you can fill out the quote form on our website or give us a call. Our team will assess your needs and provide you with a personalized cleaning quote.
-                </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="headingTwo">
+              <h3 class="mb-0">
+                <button
+                  class="btn btn-link text-success collapsed"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#collapseTwo"
+                  aria-expanded="false"
+                  aria-controls="collapseTwo"
+                >
+                  How can I request a cleaning quote?
+                </button>
+              </h3>
+            </div>
+            <div
+              id="collapseTwo"
+              class="collapse"
+              aria-labelledby="headingTwo"
+              data-parent="#accordionExample"
+            >
+              <div class="card-body">
+                To request a cleaning quote, you can fill out the quote form on
+                our website or give us a call. Our team will assess your needs
+                and provide you with a personalized cleaning quote.
               </div>
             </div>
-            <div class="card">
-              <div class="card-header" id="headingFive">
-                <h3 class="mb-0">
-                  <button class="btn btn-link text-success collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                    Are your cleaning staff trained and reliable?
-                  </button>
-                </h3>
-              </div>
-              <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
-                <div class="card-body">
-                  Yes, our cleaning staff is highly trained, experienced, and reliable. We carefully screen and select our team members to ensure they meet our quality standards. Additionally, we provide ongoing training and supervision to maintain the highest level of service.
-                </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="headingFive">
+              <h3 class="mb-0">
+                <button
+                  class="btn btn-link text-success collapsed"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#collapseFive"
+                  aria-expanded="false"
+                  aria-controls="collapseFive"
+                >
+                  Are your cleaning staff trained and reliable?
+                </button>
+              </h3>
+            </div>
+            <div
+              id="collapseFive"
+              class="collapse"
+              aria-labelledby="headingFive"
+              data-parent="#accordionExample"
+            >
+              <div class="card-body">
+                Yes, our cleaning staff is highly trained, experienced, and
+                reliable. We carefully screen and select our team members to
+                ensure they meet our quality standards. Additionally, we provide
+                ongoing training and supervision to maintain the highest level
+                of service.
               </div>
             </div>
           </div>
         </div>
-        <div class="col-lg-6">
-          <div class="accordion" id="accordionExample">
-            <div class="card">
-              <div class="card-header" id="headingThree">
-                <h3 class="mb-0">
-                  <button class="btn btn-link text-success collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                    Can I schedule my cleaning plan?
-                  </button>
-                </h3>
-              </div>
-              <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
-                <div class="card-body">
-                  Yes, you can schedule your cleaning plan.
-  
-   Once you receive a cleaning quote and are satisfied with the pricing, our team will work with you to find a convenient time for the cleaning services. We offer flexible scheduling options to accommodate your preferences.
-                </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="accordion" id="accordionExample">
+          <div class="card">
+            <div class="card-header" id="headingThree">
+              <h3 class="mb-0">
+                <button
+                  class="btn btn-link text-success collapsed"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#collapseThree"
+                  aria-expanded="false"
+                  aria-controls="collapseThree"
+                >
+                  Can I schedule my cleaning plan?
+                </button>
+              </h3>
+            </div>
+            <div
+              id="collapseThree"
+              class="collapse"
+              aria-labelledby="headingThree"
+              data-parent="#accordionExample"
+            >
+              <div class="card-body">
+                Yes, you can schedule your cleaning plan. Once you receive a
+                cleaning quote and are satisfied with the pricing, our team will
+                work with you to find a convenient time for the cleaning
+                services. We offer flexible scheduling options to accommodate
+                your preferences.
               </div>
             </div>
-            <div class="card">
-              <div class="card-header" id="headingFour">
-                <h3 class="mb-0">
-                  <button class="btn btn-link text-success collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                    How can I rate the service and provide feedback?
-                  </button>
-                </h3>
-              </div>
-              <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
-                <div class="card-body">
-                  We appreciate your feedback and strive to provide excellent service. After each cleaning session, you can rate our service and provide feedback. You can do this through our website or by contacting our customer support team. Your input is valuable to us and helps us improve our services.
-                </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="headingFour">
+              <h3 class="mb-0">
+                <button
+                  class="btn btn-link text-success collapsed"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#collapseFour"
+                  aria-expanded="false"
+                  aria-controls="collapseFour"
+                >
+                  How can I rate the service and provide feedback?
+                </button>
+              </h3>
+            </div>
+            <div
+              id="collapseFour"
+              class="collapse"
+              aria-labelledby="headingFour"
+              data-parent="#accordionExample"
+            >
+              <div class="card-body">
+                We appreciate your feedback and strive to provide excellent
+                service. After each cleaning session, you can rate our service
+                and provide feedback. You can do this through our website or by
+                contacting our customer support team. Your input is valuable to
+                us and helps us improve our services.
               </div>
             </div>
-            <div class="card">
-              <div class="card-header" id="headingSix">
-                <h3 class="mb-0">
-                  <button class="btn btn-link text-success collapsed" type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-                    What cleaning products do you use?
-                  </button>
-                </h3>
-              </div>
-              <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordionExample">
-                <div class="card-body">
-                  We use high-quality, eco-friendly cleaning products that are safe for you, your family, and the environment. These products effectively clean and disinfect while minimizing any negative impact on the surroundings.
-                </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="headingSix">
+              <h3 class="mb-0">
+                <button
+                  class="btn btn-link text-success collapsed"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#collapseSix"
+                  aria-expanded="false"
+                  aria-controls="collapseSix"
+                >
+                  What cleaning products do you use?
+                </button>
+              </h3>
+            </div>
+            <div
+              id="collapseSix"
+              class="collapse"
+              aria-labelledby="headingSix"
+              data-parent="#accordionExample"
+            >
+              <div class="card-body">
+                We use high-quality, eco-friendly cleaning products that are
+                safe for you, your family, and the environment. These products
+                effectively clean and disinfect while minimizing any negative
+                impact on the surroundings.
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-
-  
-  <!-- <section class="ftco-section bg-light">
+<!-- <section class="ftco-section bg-light">
     <div class="container">
       <div class="row">
         <div class="col-lg-12 text-center mb-5">
@@ -668,7 +919,7 @@
 <!-- <div class="col-md-12">
   <div id="map" class="map"></div>
 </div> -->
-  </section>
+<!-- </section> -->
 
 <!-- <section class="ftco-section ftco-no-pt">
 <div class="container">
@@ -1133,28 +1384,24 @@
 </div>
 </section> -->
 
-
-
 <section
-class="ftco-section ftco-intro"
-style="background-image: url('images/bg_3.jpg')"
-data-stellar-background-ratio="0.5"
+  class="ftco-section ftco-intro"
+  style="background-image: url('images/bg_3.jpg')"
+  data-stellar-background-ratio="0.5"
 >
-<div class="overlay"></div>
-<div class="container">
-  <div class="row justify-content-center">
-    <div class="col-md-8 text-center">
-      <h2>Together we will explore new things</h2>
-      <a
-        href=""
-        class="icon-video d-flex align-items-center justify-content-center"
-        ><span class="fa fa-play"></span
-      ></a>
+  <div class="overlay"></div>
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-8 text-center">
+        <h2>Together we will explore new things</h2>
+        <a
+          href=""
+          class="icon-video d-flex align-items-center justify-content-center"
+          ><span class="fa fa-play"></span
+        ></a>
+      </div>
     </div>
   </div>
-</div>
 </section>
 
-    
 {% endblock content %}
-    
