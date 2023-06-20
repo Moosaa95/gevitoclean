@@ -9898,12 +9898,18 @@ textarea.form-control {
   margin-bottom: 6em;
 }
 
-.hero .carousel-item::before {
+#ftco-navbar{
+
+  /* border: 4px solid red;  */
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+/* .hero .carousel-item::before {
   content: "";
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.3);
   position: absolute;
   inset: 0;
-}
+} */
 
 .hero .info {
   position: absolute;
@@ -10017,4 +10023,30 @@ textarea.form-control {
 .hero .carousel-control-prev:hover,
 .hero .carousel-control-next:hover {
   opacity: 0.9;
+}
+
+@media (max-width: 767px) {
+  #hero-carousel {
+    /* max-height: 4000px; */
+    min-height: 400px;
+    height: 20px; /* Adjust the height as per your requirements */
+    margin-bottom: 4em;
+    /* border: 4px solid red; */
+  }
+}
+
+@media (min-width: 768px) {
+  #hero-carousel {
+    height: 40px; /* Adjust the height as per your requirements */
+    /* border: 4px solid green; */
+
+  }
+}
+
+@media (min-width: 992px) {
+  #hero-carousel {
+    /* height: 60px; Adjust the height as per your requirements */
+    /* border: 4px solid blue; */
+
+  }
 }
