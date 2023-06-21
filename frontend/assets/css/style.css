@@ -9890,12 +9890,20 @@ textarea.form-control {
   position: absolute;
   inset: 0;
   background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  /* background-position: center; */
+  /* background-repeat: no-repeat; */
   overflow: hidden;
   z-index: 1;
-  transition-duration: 0.4s;
+  /* transition-duration: 0.4s; */
   margin-bottom: 6em;
+  background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    transition: background-image 0.5s ease-in-out;
+}
+
+.carousel-item:not(.active) {
+  opacity: 0;
 }
 
 #ftco-navbar{
