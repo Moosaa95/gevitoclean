@@ -9895,7 +9895,7 @@ textarea.form-control {
   overflow: hidden;
   z-index: 1;
   /* transition-duration: 0.4s; */
-  margin-bottom: 6em;
+  margin-bottom: 0em;
   background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -9925,10 +9925,15 @@ textarea.form-control {
   z-index: 2;
 }
 
+
 @media (max-width: 768px) {
   .hero .info {
     padding: 0 50px;
   }
+  .number{
+    padding-left: 4.5em;
+  }
+
 }
 
 .hero .info h2 {
