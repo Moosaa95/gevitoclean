@@ -94,41 +94,7 @@
     <script src="/static/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="/static/assets/vendor/swiper/swiper-bundle.min.js"></script>
     <script src="/static/assets/js/google-map.js"></script>
-    <script>
-      // Generate a cache-busting parameter
-      var cacheBuster = new Date().getTime();
-  
-      // Function to update the URLs of static assets with the cache-busting parameter
-      function updateAssetUrls() {
-        var elements = document.getElementsByTagName("link");
-        for (var i = 0; i < elements.length; i++) {
-          var href = elements[i].getAttribute("href");
-          if (href) {
-            elements[i].setAttribute("href", href + "?v=" + cacheBuster);
-          }
-        }
-  
-        var scripts = document.getElementsByTagName("script");
-        for (var i = 0; i < scripts.length; i++) {
-          var src = scripts[i].getAttribute("src");
-          if (src) {
-            scripts[i].setAttribute("src", src + "?v=" + cacheBuster);
-          }
-        }
-  
-        var images = document.getElementsByTagName("img");
-        for (var i = 0; i < images.length; i++) {
-          var src = images[i].getAttribute("src");
-          if (src) {
-            images[i].setAttribute("src", src + "?v=" + cacheBuster);
-          }
-        }
-      }
-  
-      // Call the function to update asset URLs after the page has finished loading
-      window.addEventListener("load", updateAssetUrls);
-    </script>
-    
+   
     {% block script %}
         
     <script src="/static/assets/js/main.js"></script>

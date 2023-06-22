@@ -33,6 +33,8 @@
 	};
 	loader();
 
+	
+
   var carousel = function() {
 		$('.carousel-testimony').owlCarousel({
 			center: false,
