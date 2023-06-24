@@ -7,22 +7,20 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
-    <meta http-equiv="cache-control" content="no-cache" />
-    <meta http-equiv="pragma" content="no-cache" />
-    <meta http-equiv="expires" content="0" />
-    <meta
-      name="keywords"
-      content="Commercial cleaning, Commercial Cleaning in Lagos and Nigeria, Office cleaning, Janitorial services, Professional cleaners in Lagos, Commercial cleaning services, Facility cleaning, Commercial building cleaners, Commercial disinfection services, Office maintenance, Fumigation services"
-    />
+    <meta http-equiv="cache-control" content="no-cache">
+  <meta http-equiv="pragma" content="no-cache">
+    <meta http-equiv="expires" content="0">
+    <meta name="keywords" content="Commercial cleaning, Commercial Cleaning in Lagos and Nigeria, Office cleaning, Janitorial services, Professional cleaners in Lagos, Commercial cleaning services, Facility cleaning, Commercial building cleaners, Commercial disinfection services, Office maintenance, Fumigation services">
 
     <link
       href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
       rel="stylesheet"
     />
 
-    <!-- Favicons -->
-    <link href="/static/assets/images/gevito.ico" rel="icon" />
-    <link href="/static/assets/images/gevito.ico" rel="apple-touch-icon" />
+      <!-- Favicons -->
+  <link href="/static/assets/images/gevito.ico" rel="icon">
+  <link href="/static/assets/images/gevito.ico" rel="apple-touch-icon">
+
 
     <link
       rel="stylesheet"
@@ -40,15 +38,25 @@
 
     <link rel="stylesheet" href="/static/assets/css/flaticon.css" />
     <link rel="stylesheet" href="/static/assets/css/style.css" />
-    <link
-      href="/static/assets/vendor/swiper/swiper-bundle.min.css"
-      rel="stylesheet"
-    />
+    <link href="/static/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
   </head>
   <body>
-    {% block header %} {% include 'includes/header.html' %} {% endblock header
-    %} {% block content %} {% endblock content %} {% block footer %} {% include
-    'includes/footer.html' %} {% endblock footer %}
+	
+	{% block header %}
+		{% include 'includes/header.html' %}
+	{% endblock header %}
+		
+    
+    {% block content %}
+        
+    {% endblock content %}
+        
+
+   
+   {% block footer %}
+    {% include 'includes/footer.html' %}
+   {% endblock footer %}
+    
 
     <!-- loader -->
     <div id="ftco-loader" class="show fullscreen">
@@ -88,13 +96,14 @@
     <script src="/static/assets/js/scrollax.min.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
     <script src="/static/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="/static/assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="/static/assets/vendor/swiper/swiper-bundle.min.js"></script>
     <script src="/static/assets/js/google-map.js"></script>
-
+   
     {% block script %}
-
+        
     <script src="/static/assets/js/main.js"></script>
-
+    
     {% endblock script %}
+        
   </body>
 </html>
