@@ -20,22 +20,22 @@
       style="background-image: url(/static/assets/images/slidee7.jpeg)"
     ></div>
     <div
-    class="carousel-item"
-    style="background-image: url(/static/assets/images/slidee8.jpeg)"
-  ></div>
+      class="carousel-item"
+      style="background-image: url(/static/assets/images/slidee8.jpeg)"
+    ></div>
 
     <div
       class="carousel-item"
       style="background-image: url(/static/assets/images/slidee5.jpeg)"
     ></div>
     <div
-    class="carousel-item"
-    style="background-image: url(/static/assets/images/slidee6.jpeg)"
-  ></div>
-  <div
-  class="carousel-item"
-  style="background-image: url(/static/assets/images/slidew1.jpeg)"
-></div>
+      class="carousel-item"
+      style="background-image: url(/static/assets/images/slidee6.jpeg)"
+    ></div>
+    <div
+      class="carousel-item"
+      style="background-image: url(/static/assets/images/slidew1.jpeg)"
+    ></div>
 
     <!-- <a
       class="carousel-control-prev"
@@ -64,87 +64,133 @@
 </section>
 
 <!-- <section class="ftco-appointment ftco-section appoint ftco-no-pt ftco-no-pb" style="margin-top: 3.5em"> -->
-  <section class="ftco-section">
-    <div class="overlay"></div>
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-12">
-          <div class="wrap-appointment bg-white">
-            <form action="#" class="appointment">
-              <div class="row justify-content-center">
-                <div class="col-12">
-                  <div class="form-group py-2 px-4">
-                    <label for="name">Name</label>
-                    <input type="text" class="form-control" placeholder="Your Name" />
-                  </div>
+<section class="ftco-section">
+  <div class="overlay"></div>
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12">
+        <div class="wrap-appointment bg-white">
+          <form action="#" id="quoteForm" class="appointment">
+            <div class="row justify-content-center">
+              <div class="col-12">
+                <div class="form-group py-2 px-4">
+                  <label for="name">Name</label>
+                  <input
+                    type="text"
+                    name="name"
+                    class="form-control"
+                    placeholder="Your Name"
+                    required
+                  />
                 </div>
-                <div class="col-12">
-                  <div class="form-group py-2 px-4">
-                    <label for="phone">Phone number</label>
-                    <input type="text" class="form-control" placeholder="Phone number" />
-                  </div>
+              </div>
+              <div class="col-12">
+                <div class="form-group py-2 px-4">
+                  <label for="phone">Phone number</label>
+                  <input
+                    type="text"
+                    name="phone"
+                    class="form-control"
+                    placeholder="Phone number"
+                    required
+                  />
                 </div>
-                <div class="col-12">
-                  <div class="form-group py-2 px-4">
-                    <label for="email">Email</label>
-                    <input type="email" class="form-control" placeholder="Email" />
-                  </div>
+              </div>
+              <div class="col-12">
+                <div class="form-group py-2 px-4">
+                  <label for="email">Email</label>
+                  <input
+                    type="email"
+                    name="email"
+                    class="form-control"
+                    placeholder="Email"
+                    required
+                  />
                 </div>
-                <div class="col-12">
-                  <div class="form-group py-2 px-4">
-                    <label for="services">Select Services</label>
-                    <div class="form-field">
-                      <div class="select-wrap">
-                        <div class="icon">
-                          <span class="fa fa-chevron-down"></span>
-                        </div>
-                        <select name="" id="" class="form-control">
-                          <option value="">Select Services</option>
-                          <option value="">Office Cleaning</option>
-                          <option value="">Home and Facility Cleaning</option>
-                          <option value="">Deep Cleaning</option>
-                          <option value="">Fumigation and Disinfection</option>
-                          <option value="">Laundry and Ironing</option>
-                          <option value="">Affiliate an Employee</option>
-                        </select>
+              </div>
+              <div class="col-12">
+                <div class="form-group py-2 px-4">
+                  <label for="services">Select Services</label>
+                  <div class="form-field">
+                    <div class="select-wrap">
+                      <div class="icon">
+                        <span class="fa fa-chevron-down"></span>
                       </div>
+                      <select name="service" id="" class="form-control">
+                        <option value="">Select Services</option>
+                        <option value="office-cleaning">Office Cleaning</option>
+                        <option value="home-facility-cleaning">
+                          Home and Facility Cleaning
+                        </option>
+                        <option value="deep-cleaning">Deep Cleaning</option>
+                        <option value="fumigation-disinfection">
+                          Fumigation and Disinfection
+                        </option>
+                        <option value="laundry-ironing">
+                          Laundry and Ironing
+                        </option>
+                        <option value="affiliate-employee">
+                          Affiliate an Employee
+                        </option>
+                      </select>
                     </div>
-                  </div>
-                </div>
-                <div class="col-12">
-                  <div class="form-group py-2 px-4">
-                    <label for="cleaning-quantity">How many cleanings do you need</label>
-                    <div class="form-field">
-                      <div class="select-wrap">
-                        <div class="icon">
-                          <span class="fa fa-chevron-down"></span>
-                        </div>
-                        <select name="" id="" class="form-control">
-                          <option value="">Select Type</option>
-                          <option value="">Daily</option>
-                          <option value="">Weekly</option>
-                          <option value="">Bi-Weekly</option>
-                          <option value="">Once</option>
-                        </select>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-12 d-flex justify-content-center">
-                  <div class="form-group py-2 px-4">
-                    <input type="submit" value="Quote Now" class="btn btn-primary py-3 px-4" />
                   </div>
                 </div>
               </div>
-            </form>
-          </div>
+              <div class="col-12">
+                <div class="form-group py-2 px-4">
+                  <label for="cleaning-quantity"
+                    >How many cleanings do you need</label
+                  >
+                  <div class="form-field">
+                    <div class="select-wrap">
+                      <div class="icon">
+                        <span class="fa fa-chevron-down"></span>
+                      </div>
+                      <select name="type" id="" class="form-control">
+                        <option value="">Select Type</option>
+                        <option value="daily">Daily</option>
+                        <option value="weekly">Weekly</option>
+                        <option value="bi-weekly">Bi-Weekly</option>
+                        <option value="once">Once</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-12">
+                <div class="my-3">
+                  <div class="loading">Loading Please wait</div>
+                  <div class="error-message"></div>
+                  <div class="sent-message text-success">Welcome to Gevito Cleaning Services ,your place of Comfort, we'll be in touch with you shortly.</div>
+                </div>
+                <div class="text-center"><button type="submit" id="quoteBtn">Quote Now</button> <div class="loading"></div></div>
+              </div>
+              <!-- <div class="my-3">
+                <div class="loading">Loading Please wait</div>
+                <div class="error-message"></div>
+                <div class="sent-message">
+                  Your message has been sent. Thank you!
+                </div>
+              </div>
+              <div class="col-12 d-flex justify-content-center">
+                <div class="text-center">
+                  <button type="submit" id="quoteBtn">Quote Now</button>
+                  <div class="loading"></div>
+                </div> -->
+                <!-- <div class="form-group py-2 px-4"> -->
+
+                <!-- <input type="submit" value="Quote Now" class="btn btn-primary py-3 px-4" /> -->
+
+                <!-- </div> -->
+              <!-- </div> -->
+            </div>
+          </form>
         </div>
       </div>
     </div>
-  </section>
-  
-
-
+  </div>
+</section>
 
 <section class="ftco-section ftco-no-pt ftco-no-pb">
   <div class="container">
